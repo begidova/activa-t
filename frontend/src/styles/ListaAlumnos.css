@@ -1,0 +1,148 @@
+.filtros-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filtros-container div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.filtros-container input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 3;
+}
+
+.tabla-alumnos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-alumnos th, .tabla-alumnos td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-alumnos th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+.tabla-alumnos tr:hover {
+    background-color: #f1f7ff;
+}
+
+.contenedor-acciones {
+    display: flex;
+    gap: 8px;
+    justify-content: center; 
+}
+
+.btn-accion {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+.btn-nota {
+    background-color: #ffffff;
+    color: #3498db;
+    border: 1.5px solid #3498db;
+}
+
+.btn-nota:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.btn-perfil {
+    background-color: #ffffff;
+    color: #27ae60;
+    border: 1.5px solid #27ae60;
+}
+
+.btn-perfil:hover {
+    background-color: #27ae60;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+.lista-alumnos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.titulo-principal {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.btn-importar-alumnos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+}
+
+.btn-importar-alumnos:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+    filter: brightness(1.05);
+}
+
+.btn-importar-alumnos:active {
+    transform: translateY(0);
+}
+
+.btn-importar-alumnos svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-importar-alumnos:hover svg {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .lista-alumnos-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .btn-importar-alumnos {
+        width: 100%;
+        justify-content: center;
+    }
+}

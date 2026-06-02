@@ -1,0 +1,99 @@
+.form-card-actividad {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.02);
+  border: 1px solid #e2e8f0;
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; 
+  box-sizing: border-box;
+}
+
+.form-actividad-title {
+  margin: 0 0 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #1e293b;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.form-card-actividad input[type="text"],
+.form-card-actividad input[type="date"],
+.form-card-actividad select {
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #1e293b;
+  background-color: #ffffff; 
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-card-actividad input:focus,
+.form-card-actividad select:focus {
+  border-color: #94a3b8;
+  box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.08);
+}
+
+.form-actividad-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.form-actividad-row select {
+  flex: 1; 
+}
+
+.form-actividad-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.btn-actividad-save {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  box-sizing: border-box;
+}
+
+.btn-actividad-save:active {
+  transform: scale(0.99);
+}
+
+.btn-actividad-cancel {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.2s;
+  text-align: center;
+}
+
+.btn-actividad-cancel:hover {
+  color: #334155;
+  text-decoration: underline;
+}

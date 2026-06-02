@@ -1,0 +1,198 @@
+.form-card-sesion {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.02); 
+    border: 1px solid #e2e8f0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-title {
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #1e293b;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.flex-3 { flex: 3; }
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #475569;
+    padding-left: 2px;
+}
+
+.form-card-sesion input[type="text"],
+.form-card-sesion input[type="number"],
+.form-card-sesion select,
+.form-card-sesion textarea {
+    padding: 14px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #1e293b;
+    background-color: #ffffff;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-card-sesion input:focus,
+.form-card-sesion select:focus,
+.form-card-sesion textarea:focus {
+    border-color: #94a3b8;
+    box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.08);
+}
+
+.form-divider {
+    border: 0;
+    border-top: 1px solid #f1f5f9;
+    margin: 5px 0;
+}
+
+.fase-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fase-header-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fase-title {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1rem;
+}
+
+.form-item-inline {
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+    gap: 4px; 
+    background: #ffffff;
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    height: 38px; 
+    box-sizing: border-box;
+}
+
+.form-label-inline {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #475569;
+    line-height: 1; 
+    display: inline-block;
+}
+
+.input-tiempo {
+    border: none !important;
+    padding: 0 !important;
+    width: 32px !important;
+    text-align: center;
+    font-weight: 600;
+    background: transparent !important;
+    box-shadow: none !important;
+    font-size: 1rem !important;
+    color: #1e293b;
+    display: inline-block;
+    line-height: 1; 
+}
+
+.mins-tag {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1;
+    display: inline-block;
+}
+
+.form-card-sesion textarea {
+    font-family: inherit;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 12px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-submit-sesion {
+    padding: 14px 40px; 
+    width: auto;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    color: white;
+}
+
+.btn-submit-sesion:active {
+    transform: scale(0.98);
+}
+
+.btn-cancel-sesion {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.2s;
+    text-transform: none; 
+}
+
+.btn-cancel-sesion:hover {
+    color: #334155; 
+    text-decoration: underline; 
+}
+
+@media (max-width: 640px) {
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn-submit-sesion {
+        width: 100%; 
+        text-align: center;
+    }
+}

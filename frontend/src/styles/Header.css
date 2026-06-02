@@ -1,0 +1,140 @@
+.main-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 24px;
+    height: 70px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); 
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+.header-brand-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+
+.header-brand-section:hover {
+    transform: scale(1.02); 
+}
+
+.header-logo {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+}
+
+.header-app-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #1e293b; 
+    letter-spacing: 2px; 
+    margin: 0;
+}
+
+.header-user-section {
+    position: relative;
+}
+
+.user-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+.user-dropdown-trigger:hover {
+    background-color: #f1f5f9;
+}
+
+.avatar-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #4f46e5; 
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+}
+
+.welcome-text {
+    font-size: 0.92rem;
+    color: #475569;
+}
+
+.welcome-text strong {
+    color: #0f172a;
+}
+
+.arrow {
+    color: #64748b;
+    transition: transform 0.2s ease;
+}
+
+.arrow.up {
+    transform: rotate(180deg);
+}
+
+.user-menu-dropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    padding: 6px;
+    width: 200px;
+    animation: fadeIn 0.15s ease-out;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    color: #475569;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.15s ease;
+}
+
+.menu-item:hover {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+.menu-item.logout {
+    color: #ef4444; 
+}
+
+.menu-item.logout:hover {
+    background-color: #fef2f2;
+    color: #dc2626;
+}
+
+.dropdown-divider {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 6px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}

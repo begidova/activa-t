@@ -1,0 +1,171 @@
+.tarjeta-sesion-alumno {
+    background: white;
+    border-radius: 20px;
+    padding: 18px; 
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    min-height: 140px; 
+    gap: 12px; 
+}
+
+.tarjeta-sesion-alumno.destacada {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+    color: #ffffff !important; 
+    border: none;
+}
+
+.tarjeta-sesion-alumno.destacada h3 {
+    color: #ffffff !important;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.tarjeta-sesion-alumno.destacada .sa-nombre {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.label-proxima {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.sesion-card-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0; 
+}
+
+.numero-sesion {
+    font-size: 1.1rem; 
+    font-weight: 900;
+    color: #cbd5e1;
+}
+
+.destacada .numero-sesion {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.sesion-card-body h3 {
+    margin: 0;
+    font-size: 1.2rem; 
+    text-transform: uppercase;
+    color: #1e293b;
+    margin-bottom: 2px; 
+}
+
+.sa-nombre {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem; 
+    color: #64748b;
+}
+
+.sesion-card-footer {
+    margin-top: 5px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-top: 1px solid #f1f5f9;
+    padding-top: 10px; 
+}
+
+.destacada .sesion-card-footer {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.info-secundaria {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+    align-items: center;
+}
+
+.recursos-count, .duracion-tag-footer {
+    font-size: 0.8rem;
+}
+
+.destacada .recursos-count {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.destacada .duracion-tag-footer {
+    color: white;
+}
+
+.btn-entrar {
+    color: #4f46e5;
+    width: 32px; 
+    height: 32px; 
+    border-radius: 8px;
+}
+
+.destacada .btn-entrar {
+    color: white;
+}
+
+.icon-play-bg {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    opacity: 0.15;
+    color: white;
+    transform: rotate(-10deg);
+    pointer-events: none;
+}
+
+.tarjeta-sesion-alumno.sesion-bloqueada {
+    opacity: 0.6; 
+    cursor: not-allowed; 
+    background-color: #f8fafc; 
+    border-color: #e2e8f0;
+}
+
+.tarjeta-sesion-alumno.sesion-bloqueada:hover {
+    transform: none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    background-color: #f8fafc !important;
+}
+
+.label-bloqueada {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #cbd5e1; 
+    color: #475569; 
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-entrar.btn-bloqueado {
+    background-color: #e2e8f0;
+    color: #94a3b8;
+    cursor: not-allowed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

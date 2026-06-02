@@ -1,0 +1,133 @@
+.status-msg {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+.status-msg.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+  
+.status-msg.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.form-card p {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.btn-save {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    width: 100%;
+}
+
+.btn-save:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.importar-header {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 30px; 
+    width: 100%;
+}
+
+.btn-volver-minimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: #f1f3f7; 
+    color: #4a5568; 
+    border: none;
+    border-radius: 12px; 
+    padding: 7px 10px; 
+    font-weight: 700; 
+    font-size: 0.95rem;
+    cursor: pointer;
+    width: fit-content;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-volver-minimal:hover {
+    background-color: #e2e7f0; 
+}
+
+.titulo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono-titulo {
+    background: #ecfdf5;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-principal {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.subtitulo-seccion {
+    margin: 2px 0 0 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f1f5f9;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    background: #f8fafc;
+    border: 2px dashed #e2e8f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+input[type="file"]:hover {
+    border-color: #2ecc71;
+}

@@ -1,0 +1,132 @@
+.eval-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.eval-info h2 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 1.5rem;
+}
+
+.eval-info span {
+    color: #718096;
+    font-weight: 500;
+}
+
+.btn-back, .btn-save-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-back {
+    background: #edf2f7;
+    color: #4a5568;
+}
+
+.btn-back:hover { background: #e2e8f0; }
+
+.btn-save-all {
+    background: #48bb78;
+    color: white;
+}
+
+.btn-save-all:hover { background: #38a169; }
+
+.btn-save-all:disabled {
+    background: #a0aec0;
+    cursor: not-allowed;
+}
+
+.eval-table-container {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.eval-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.eval-table th {
+    background: #f7fafc;
+    padding: 15px;
+    color: #4a5568;
+    font-weight: 600;
+    border-bottom: 2px solid #edf2f7;
+}
+
+.eval-table td {
+    padding: 12px 15px;
+}
+
+.eval-table tr:hover {
+    background-color: #f9fafb;
+}
+
+.alumno-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mini-avatar-placeholder {
+    color: #a0aec0;
+    background: #edf2f7;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.input-nota {
+    width: 80px;
+    padding: 8px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-nota:focus {
+    border-color: #4299e1;
+}
+
+.comentario-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-msg { color: #a0aec0; }
+
+.input-comentario {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.input-comentario:focus {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+}

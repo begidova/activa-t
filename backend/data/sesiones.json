@@ -1,0 +1,511 @@
+[
+  {
+    "titulo": "Descubrimiento",
+    "numeroSesion": 1,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Presentacion",
+          "descripcion": "Introducción del Palados y explicar el trabajo del dia de crear nuestras propias palas,en donde enseñaremos unas palas que ya tenemos hechas."
+        },
+        {
+          "titulo": "",
+          "descripcion": "Reparto de plantillas para crear las palas y cartones"
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Recorte",
+          "descripcion": "Cada alumno recortara los cartones en 4 piezas lo más idénticas posibles para poder unirlas en tacos de 2 y que sean más resistentes."
+        },
+        {
+          "titulo": "Refuerzo",
+          "descripcion": "Tras recortar las piezas las juntaran y pegaran con cinta aislante,pegamento,grapas y muy importante anclar bien la superficie del mango para que no se rompa al golpear."
+        },
+        {
+          "titulo": "Personalizacion",
+          "descripcion": "Poner su nombre y un dibujo de sus manos por encima del mango para identificar su mano derecha e izquierda."
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "",
+          "descripcion": "Limpieza del aula y del material utilizado."
+        },
+        {
+          "titulo": "",
+          "descripcion": "Supervisar las palas y dar consejos a las más endebles."
+        },
+        {
+          "titulo": "",
+          "descripcion": "Las palas se las llevaran a casa y para el siguiente día deberían contar con un diseño(foto de su equipo favorito,jugador,padres,madala…) y estar operativas para la siguiente sesión."
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Aprendizaje técnico básico",
+    "numeroSesion": 2,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Organización",
+          "descripcion": "Recogida y palas y explicación de la sesión."
+        },
+        {
+          "titulo": "Juego Semáforo",
+          "descripcion": "Los alumnos se desplazan trotando y a la señal",
+          "reglas": [
+            { "titulo": "Verde", "descripcion": "Botar la pelota contra el suelo con la mano derecha" },
+            { "titulo": "Ambar", "descripcion": "Mantener la pelota en equilibrio sobre la pala izquierda mientras caminan" },
+            { "titulo": "Rojo", "descripcion": "Sentarse y dar toques cortos hacia arriba alternando palas" }
+          ]
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Agarre en V",
+          "descripcion": "Explicación y práctica del agarre. Deben colocar la mano formando una 'V' en el mango."
+        },
+        {
+          "titulo": "Toques de Control (5 mins)",
+          "descripcion": "Individual. 20 toques hacia arriba con la mano dominante y 20 con la no dominante."
+        },
+        {
+          "titulo": "Cambio de Pases (5 mins)",
+          "descripcion": "En parejas, uno frente a otro. El compañero lanza la pelota suavemente con la mano y el otro debe devolverla usando solo el golpeo de derecha,después cambian."
+        },
+        {
+          "titulo": "Practica mano no dominante (5 mins)",
+          "descripcion": "Igual que el anterior, pero usando la pala de la mano no dominante para hacer el gesto de revés"
+        },
+        {
+          "titulo": "Pases en paralelo (5 mins)",
+          "descripcion": "Por parejas, situados a ambos lados de una línea del campo. Deben pasarse la pelota de forma continua"
+        },
+        {
+          "titulo": "Contra la pared (5 mins)",
+          "descripcion": "Frente a la pared. Lanzar, dejar que bote y golpear de derecha"
+        },
+        {
+          "titulo": "Retos en Parejas (10 mins)",
+          "descripcion": "Dividimos la clase en pequeños grupos. Cada grupo tiene un 'reto técnico'",
+          "reglas": [
+            {"titulo": "Reto 1", "descripcion": "10 pases de derecha.(si lo consiguen facil a 20)"},
+            {"titulo": "Reto 2", "descripcion": "10 pases de revés.(si lo consiguen facil a 20)"},
+            {"titulo": "Reto 3", "descripcion": "Alternar derecha e izquierda 10 veces.(si lo consiguen facil a 20)"}
+          ]
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Reflexión",
+          "descripcion": "Pregunta final sobre cómo se han visto con el uso de las dos manos y dificultades."
+        },
+        {
+          "titulo": "Recogida",
+          "descripcion": "Organización del material y revisión de las palas de cartón."
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Mejora técnica",
+    "numeroSesion": 3,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Reparto",
+          "descripcion": "Se reparten las palas de cada alumno."
+        },
+        {
+          "titulo": "Juego del Director",
+          "descripcion": "Un compañero se colocará en mitad de un círculo y el resto deben de imitar sus gestos"
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Precisión Aros (7 mins)",
+          "descripcion": "Se colocan unos aros a diferentes distancias y los alumnos deberán intentar que tras golpear la pelota esta bote dentro de un aro y se asignan puntos,cerca 1 pts,medio 3pts y lejos 5pts."
+        },
+        {
+          "titulo": "Control de la Altura (8 mins)",
+          "descripcion": "El profesor coloca la red a una altura media. Los alumnos, por parejas, deben pasarse la pelota variando la altura de esta a veces muy alta(glovo) y otras más cerca de la red"
+        },
+        {
+          "titulo": "Golpeos contra la pared (8 mins)",
+          "descripcion": "Individual frente a la pared y después por parejas alternando golpes. Deben intentar dar el mayor número de toques seguidos sin que la pelota bote en el suelo."
+        },
+        {
+          "titulo": "Variación de la distancia (12 mins)",
+          "descripcion": "En parejas. Empiezan a 1 metro de distancia. Cada 3 pases acertados, ambos dan un paso atrás. Si la pelota cae, vuelven al centro.Van alternando, la primera vez con la mano dominante,siguiente con la no dominante y acan alternando manos en cada golpe."
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Reflexión",
+          "descripcion": "Pregunta final sobre cómo se han visto una vez se ha avanzado un poco más en la técnica y posibles dificultades."
+        },
+        {
+          "titulo": "Recogida",
+          "descripcion": "Organización del material y revisión de las palas de cartón."
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Aplicación simple",
+    "numeroSesion": 4,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Gestión",
+          "descripcion": "Reparto de palas y una pelota por pareja."
+        },
+        {
+          "titulo": "Juego de defensa y reacción",
+          "descripcion": "En parejas, uno protege una zona pequeña y el otro intenta introducir la pelota golpeándola con su pala. Los defensores sólo pueden defenderse usando sus propias palas para desviar el móvil. A los 2 minutos, cambio de roles"
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Que no caiga en tríos(12 mins)",
+          "descripcion": "Grupos de 3 alumnos situados en forma de triángulo. Deben mantener la pelota en el aire el mayor tiempo posible.Variantes cada 4 minutos,mano no dominante,alternar mano tras golpe."
+        },
+        {
+          "titulo": "2vs1 a robar la pelota (12 mins)",
+          "descripcion": "Dos atacantes contra un defensor en un espacio delimitado. Los atacantes deben conseguir 5 pases seguidos sin que el defensor toque la pelota con su pala o esta salga del espacio.Cada 3 minutos se cambia de defensor o cada vez que se roba la pelota"
+        },
+        {
+          "titulo": "Partido Cooperativo (11 mins)",
+          "descripcion": "Parejas enfrentadas en un pasillo estrecho marcado con conos. Deben jugar un 'partido' pero con un objetivo común: llegar a 20 intercambios sin que la pelota salga del pasillo o toque el suelo.(si lleguen fácilmente se estrecha más el 'pasillo')."
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Reflexión",
+          "descripcion": "Pregunta final sobre cómo se han visto con oposición directa y posibles dificultades."
+        },
+        {
+          "titulo": "Recogida",
+          "descripcion": "Organización del material y revisión de las palas de cartón."
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Situaciones reales",
+    "numeroSesion": 5,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Gestión",
+          "descripcion": "Reparto de palas y una pelota por pareja."
+        },
+        {
+          "titulo": "Carrera de relevos",
+          "descripcion": "En grupos grandes deberán realizar una carrera de relevos hasta un cono de diferentes maneras mientras se pasan la pelota entre los compañeros,si la pelota se cae se vuelve al inicio(primero en parejas,después en cuartos y al final todos los del grupo)"
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "2vs2 en campo más grande",
+          "descripcion": "Partidos por parejas. Aquí la clave es la comunicación. Antes de devolver la pelota al campo contrario, la pareja debe intentar darse un pase entre ellos como alternativa si no se puede pasar la pelota directa."
+        },
+        {
+          "titulo": "Rey de la pista",
+          "descripcion": "Se dividirá el espacio en distintas pistas y en cada una de ellas jugarán un 2vs2 los ganadores se desplazaron hacia la derecha y los perdedores a la izquierda, partidos a 5pts"
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Reflexión",
+          "descripcion": "Que tal se han visto jugando con pareja y dificultades."
+        },
+        {
+          "titulo": "Recogida",
+          "descripcion": "Organización del material y revisión de las palas de cartón."
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Juegos modificados",
+    "numeroSesion": 6,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Gestión",
+          "descripcion": "Reparto de palas y una pelota por pareja."
+        },
+        {
+          "titulo": "Juego 'El Palados-Vóley'",
+          "descripcion": "Grupos de 4. Se juega en un campo dividido por una red. El objetivo es pasar la pelota al otro campo usando las palas, pero es obligatorio que la pelota sea tocada por dos personas de nuestro equipo antes de pasarla"
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Zonas Prohibidas (17 mins)",
+          "descripcion": "Partidos 2 contra 2. Se marca una zona grande con tiza justo en el centro de cada campo (cerca de la red) y si la pelota cae en la zona prohibida el punto será para el rival,cada 5 mins se cambia de pareja."
+        },
+        {
+          "titulo": "Diferentes puntuaciones (18 mins)",
+          "descripcion": "Partidos 2 contra 2, donde dependiendo de la zona donde se consiga el punto se conseguirán más o menos puntos,ganar el punto golpeando desde la zona de red vale 1 punto,ganarlo desde la zona media vale 3 puntos y ganarlo con un golpeo desde la línea de fondo vale 5 puntos"
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Reflexión",
+          "descripcion": "Si les resulta más difícil jugar cuando ponemos zonas prohibidas o si arriesgar para ganar el punto desde atrás tiene más beneficio."
+        },
+        {
+          "titulo": "Recogida",
+          "descripcion": "Organización del material y revisión de las palas de cartón."
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Juegos avanzados",
+    "numeroSesion": 7,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Gestión",
+          "descripcion": "Reparto de material oficial y organización de la pista."
+        },
+        {
+          "titulo": "Retos de calentamiento",
+          "descripcion": "En parejas. Deben superar tres niveles antes de empezar",
+          "reglas": [
+            {"titulo": "", "descripcion": "10 pases de derecha sin caer"},
+            {"titulo": "", "descripcion": "10 pases de mano no dominante"},
+            {"titulo": "", "descripcion": "5 pases de 'pala-suelo-pala' (controlando el bote)"}
+          ]
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Competición por Equipos: 'La Copa Paladós' (35 mins)",
+          "descripcion": "Dividimos la clase en dos grandes equipos .Se juegan varios partidos a la vez y cada victoria suma un punto al marcador general de su equipo."
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Reflexión",
+          "descripcion": "Si les ha gustado la sensación real de partido y como han visto sus enfrentamientos."
+        },
+        {
+          "titulo": "Recogida",
+          "descripcion": "Los alumnos guardan el material."
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Evaluación y reto final",
+    "numeroSesion": 8,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf7" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": []
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Evaluación",
+          "descripcion": "Por parejas irán a realizar un partido entre ellos y el profesor evaluará mediante la siguiente rúbrica."
+        },
+        {
+          "titulo": "",
+          "descripcion": "Además al finalizar el partido deberán realizar una evaluación de su compañero sobre cómo lo han visto en el partido."
+        },
+        {
+          "titulo": "Resto",
+          "descripcion": "El resto de los alumnos estarán jugando un Rey de la pista que hemos visto en otras sesiones hasta que les llamen para ser evaluados."
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": []
+    }
+  },
+  {
+    "titulo": "Descubrimiento 'El Diario de Francis Drake'",
+    "numeroSesion": 7,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf8" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "La Narrativa",
+          "descripcion": "Llegas a clase con un 'diario' viejo (el diario de Nathan Drake) y les explicas que han sido reclutados para encontrar un tesoro oculto en el centro (o entorno cercano), pero primero deben demostrar que saben interpretar pistas."
+        },
+        {
+          "titulo": "",
+          "descripcion": "Además de ponerles un video de las historias de Nathan Drake en Uncharted"
+        },
+        {
+          "titulo": "Juego 'Encuentra las reliquias'",
+          "descripcion": "Antes de la clase el profesor debe esconder 10-15 objetos pequeños (monedas, piezas de puzzle) por el patio o lugar de aprendizaje. Los alumnos deben encontrarlos libremente, pero con una condición: solo pueden desplazarse siguiendo las instrucciones de un compañero que les guía desde lejos con gestos (izquierda, derecha, adelante)."
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Explorando el Mundo (17 mins)",
+          "descripcion": "Dividimos a la clase en 'clanes de exploradores'. Se les entrega un mapa 'mundo' del centro (solo las siluetas de los edificios o del parque, sin nombres).Deben recorrer el espacio y ubicar en el mapa 5 'puntos de interés' que tú habrás marcado previamente en el entorno, la cosa está en que no les daremos indicaciones de como interpretar mapas y deberán descubrirlo por ellos mismos."
+        },
+        {
+          "titulo": "Descubriendo los Puntos (18 mins)",
+          "descripcion": "En un espacio amplio, colocamos 4 grandes carteles con los puntos cardinales (Norte, Sur, Este, Oeste) pero de forma incorrecta o simplemente sin ponerlos, solo con la ficha que les habremos dado al principio con pistas deberán colocarlos de forma correcta ellos"
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Cierre Narrativo",
+          "descripcion": "'Habéis demostrado ser buenos exploradores. En la próxima sesión , os entregaré la herramienta definitiva de Nathan Drake: la brújula'."
+        },
+        {
+          "titulo": "Reflexión",
+          "descripcion": "Preguntas sobre si les gusta la dinámica de la gamificación y cómo se han visto orientándose"
+        },
+        {
+          "titulo": "Recogida",
+          "descripcion": "Los alumnos devuelven los 'fragmentos de mapa' y las piezas encontradas."
+        }
+      ]
+    }
+  },
+
+  
+
+
+  {
+    "titulo": "Descubrimiento",
+    "numeroSesion": 1,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ed00" },
+    "curso": 2,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Presentación del material (3 mins)",
+          "descripcion": "El profesor muestra el balón de Datchball,se explica brevemente que es de espuma para evitar impactos dolorosos, pero se advierte sobre su bote irregular."
+        },
+        {
+          "titulo": "La Mancha de Balón (7 mins)",
+          "descripcion": "3 alumnos empiezan con un balón en la mano  y para eliminar a alguien, deben tocarlo con el balón sin soltarlo.",
+          "reglas": [
+            {"titulo": "Regla de descubrimiento", "descripcion": "Si el que tiene el balón lo lanza y falla, pierde su 'poder' y debe ir a buscar el balón mientras los demás huyen,el objetivo es que empiecen a percibir distancias y la velocidad de los compañeros de forma intuitiva"}
+          ]
+        }
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "El Espejo de Pared (10 mins)",
+          "descripcion": "Por parejas, cada una con un balón frente a una pared. Deben lanzar contra la pared de formas creativas: por debajo de la pierna, de espaldas, o con la mano no dominante y el balón no puede votar más de 3 veces."
+        },
+        {
+          "titulo": "Campos Minados (10 mins)",
+          "descripcion": "Se divide el espacio en 4 campos pequeños,juego de 3v3 sin lanzar el balón todavía donde el objetivo es pasarse el balón entre compañeros sin que toque el suelo y sin salirse de las líneas .",
+          "reglas": [
+            {"titulo": "Protocolo de infracción", "descripcion": "Si un alumno pisa la línea de fuera o la central, debe levantar la mano, salir del campo, dar una palmada en el suelo y volver a entrar,esto automatiza el respeto a la línea central sin necesidad de silbato constante"}
+          ]
+        },
+        {
+          "titulo": "Datchball del Caos (15 mins)",
+          "descripcion": "Partidos de 6v6 con las 3 pelotas oficiales,se juega con lo aprendido,el profesor introduce el descubrimiento del Rescate: sin explicarlo mucho, grita '¡Vida!' cada vez que alguien atrapa un balón al aire y los alumnos deben deducir que atrapar la bola al vuelo 'salva' a un compañero eliminado. Se observa quién se arriesga a cogerla y quién prefiere esquivar"
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Reflexión Final (2 mins)",
+          "descripcion": "Qué habéis sentido cuando habéis 'salvado' a un compañero atrapando la bola? ¿Es más seguro quedarse al fondo del campo o estar cerca de la línea para recoger balones?"
+        },
+        {
+          "titulo": "Recogida de material",
+          "descripcion": ""
+        }
+      ]
+    }
+  }
+]

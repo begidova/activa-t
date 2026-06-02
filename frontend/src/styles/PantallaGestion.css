@@ -1,0 +1,35 @@
+.filtros-container {
+  display: flex;
+  align-items: center; 
+  gap: 15px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.input-busqueda.buscador-texto {
+  flex: 1; 
+  max-width: 300px; 
+}
+
+.filtros-grupo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 2;
+}
+
+.input-busqueda {
+  width: 100%;
+  padding: 10px 15px; 
+  border: 2px solid #dce4ec;
+  border-radius: 12px;
+  font-size: 14px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.select-filtro {
+  flex: 1; 
+  min-width: 150px;
+  cursor: pointer;
+}

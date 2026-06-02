@@ -1,0 +1,93 @@
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white; padding: 25px; border-radius: 12px;
+    width: 90%; max-width: 500px; position: relative;
+}
+
+.modal-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 20px;
+}
+
+.atributos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.atributo-card {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.atributo-card .label {
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.atributo-card .valor {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    font-weight: 800;
+}
+
+.img-avatar-grande {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.btn-confirmar-avatar {
+    width: 100%;
+    background: #4f46e5; 
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 20px; 
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+    transition: all 0.2s ease;
+    display: block;
+    text-align: center;
+}
+
+.btn-confirmar-avatar:hover:not(:disabled) {
+    background: #4338ca;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+}
+
+.btn-confirmar-avatar:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+.btn-confirmar-avatar:disabled {
+    background: #94a3b8;
+    color: #e2e8f0;
+    box-shadow: none;
+    cursor: not-allowed;
+}

@@ -1,0 +1,81 @@
+:root {
+  --primary: #3498db;
+  --secondary: #2ecc71;
+  --danger: #e74c3c;
+  --bg: #f4f7f6;
+  --text: #2c3e50;
+}
+  
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: sans-serif;
+}
+  
+.container {
+  width: '100%';
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce4ec;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.btn-logout {
+  background: none;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--text);
+  transition: all 0.3s;
+}
+
+.nav-btn:hover { 
+  background: #f0f2f5; 
+  text-decoration: none;
+}
+
+.nav-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
