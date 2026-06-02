@@ -3,7 +3,7 @@ import { Users, AlertCircle, Calendar, FileWarning, BarChart3 } from 'lucide-rea
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 import { obtenerMediaCalificaciones, obtenerPeoresAlumnos, obtenerProximaSesion, obtenerActividadesSinCalificar, obtenerMediaCursos } from '../../services/profesorService';
-import ModalDashboard from '../../components/modales/ModalDashBoard';
+import ModalDashboard from '../../components/modales/ModalDashboard';
 import '../../styles/Dashboard.css';
 
 function DashboardProfesor() {
