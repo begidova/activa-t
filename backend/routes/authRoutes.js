@@ -8,7 +8,7 @@ const upload = multer({ dest: 'uploads/' });
 
 router.post('/registro', authController.crearProfesor);
 router.post('/login', authController.loguearUsuario);
+router.put('/', verificarToken, authController.cambiarPassword);
 router.post('/registro-alumnos', verificarToken, checkRol('PROFESOR'), upload.single('archivo'), authController.registrarAlumnos);
-
 
 module.exports = router;
