@@ -7,7 +7,7 @@ const reglaSchema = new mongoose.Schema({
 
 const actividadSchema = new mongoose.Schema({
     titulo: { type: String },
-    descripcion: { type: String, required: true },
+    descripcion: { type: String },
     reglas: [reglaSchema] 
 }, { _id: false });
 

@@ -38,10 +38,7 @@ function FiltrosSesiones({ filtroNombre, setFiltroNombre, filtroSA, setFiltroSA,
         <div className="filtros-container">
             <div className="filter-box">
                 <Filter size={18} className="filter-icon" />
-                <select 
-                    value={filtroSA} 
-                    onChange={(e) => setFiltroSA(e.target.value)}
-                >
+                <select value={filtroSA} onChange={(e) => setFiltroSA(e.target.value)}>
                     <option value="">Todos los temas</option>
                     {saFiltradas.map(sa => (
                         <option key={sa._id} value={sa.titulo}>
@@ -53,10 +50,7 @@ function FiltrosSesiones({ filtroNombre, setFiltroNombre, filtroSA, setFiltroSA,
             {esProfesor && 
                 <div className="filter-box">
                     <Filter size={18} className="filter-icon" />
-                    <select 
-                        value={filtroCurso} 
-                        onChange={(e) => setFiltroCurso(e.target.value)}
-                    >
+                    <select value={filtroCurso} onChange={(e) => setFiltroCurso(e.target.value)}>
                         <option value="">Todos los cursos</option>
                         <option value="1">1º ESO</option>
                         <option value="2">2º ESO</option>

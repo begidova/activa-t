@@ -43,7 +43,7 @@ function PantallaSesion() {
                         <ul className="reglas-lista">
                             {act.reglas.map((regla, rIdx) => (
                                 <li key={rIdx}>
-                                    {regla.titulo ? ( <strong>{regla.titulo}:</strong> ) : null }
+                                    {regla.titulo ? ( <strong>{regla.titulo}: </strong> ) : null }
                                     {regla.descripcion}
                                 </li>
                             ))}

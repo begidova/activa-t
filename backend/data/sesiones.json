@@ -507,5 +507,69 @@
         }
       ]
     }
+  },
+
+
+
+
+
+
+  {
+    "titulo": "Juego avanzado y Evaluación final",
+    "numeroSesion": 23,
+    "situacionAprendizaje": { "$oid": "69d642b43b73ef34cce5ecf9" },
+    "curso": 1,
+    "inicio": {
+      "tiempo": 10,
+      "actividades": [
+        {
+          "titulo": "Gestión",
+          "descripcion": "Cada grupo ocupa un rincón del gimnasio"
+        },
+        {
+          "titulo": "Calentamiento Libre",
+          "descripcion": "Tienen 5 minutos de 'ensayo' para repasar los 16 tiempos y la entrada"
+        },
+        {
+          "titulo": "Sorteo de Actuación",
+          "descripcion": "Se decide el orden de los grupos. Cada grupo elige un nombre artístico para su equipo"
+        } 
+      ]
+    },
+    "bloqueCentral": {
+      "tiempo": 35,
+      "actividades": [
+        {
+          "titulo": "Pase 1",
+          "descripcion": "Sin música solo percusión corporal. Aquí se evalúa la limpieza del sonido"
+        },
+        {
+          "titulo": "Pase 2",
+          "descripcion": "Con la música que hayan elegido. Aquí se evalúa la adaptación al ritmo y la expresión"
+        },
+        {
+          "titulo": "",
+          "descripcion": "Mientras ven a sus compañeros, cada grupo tiene una rúbrica",
+          "reglas": [
+            {"titulo": "", "descripcion": "¿Han ido todos a la vez?si o no"},
+            {"titulo": "", "descripcion": "¿Se ha oído bien la percusión?si o no"},
+            {"titulo": "", "descripcion": "¿La entrada en canon ha quedado clara?si o no"}
+          ]
+        }
+      ]
+    },
+    "cierre": {
+      "tiempo": 5,
+      "actividades": [
+        {
+          "titulo": "Auto-Reflexión",
+          "descripcion": "Los alumnos rellenan una ficha rápida de salida"
+        },
+        {
+          "titulo": "Feedback del Profesor",
+          "descripcion": "Valoración general de la evolución de la clase desde la Sesión 1 hasta hoy"
+        }
+      ]
+    }
   }
 ]

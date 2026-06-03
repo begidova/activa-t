@@ -72,10 +72,19 @@ function PantallaGestion({ titulo, endpoint, Formulario, Tarjeta, campoBusqueda 
     };
 
     useEffect(() => {
+        if (endpoint === "sesiones") {
+            setFiltroSA(''); 
+            sessionStorage.removeItem(`sda_${endpoint}`); 
+        }
+    }, [filtroCurso, endpoint]); 
+
+    useEffect(() => {
         sessionStorage.setItem(`busqueda_${endpoint}`, busqueda);
         sessionStorage.setItem(`curso_${endpoint}`, filtroCurso);
         sessionStorage.setItem(`sda_${endpoint}`, filtroSA);
-    }, [busqueda, filtroCurso, filtroSA, endpoint]);
+        sessionStorage.setItem(`trimestre_${endpoint}`, filtroTrimestre);
+        sessionStorage.setItem(`tipo_${endpoint}`, filtroTipo);
+    }, [busqueda, filtroCurso, filtroSA, filtroTrimestre, filtroTipo, endpoint]);
 
     useEffect(() => { obtenerDatos(); }, [endpoint]);
 

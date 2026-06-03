@@ -55,7 +55,7 @@ export const mapearTextoAArray = (texto) => {
                 titulo = partes[0].trim();
                 descripcion = partes.slice(1).join(':').trim();
             } else {
-                descripcion = lineaLimpia;
+                titulo = lineaLimpia;
             }
             actividades.push({
                 titulo,

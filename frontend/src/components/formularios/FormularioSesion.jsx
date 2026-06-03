@@ -149,7 +149,7 @@ function FormularioSesion({ guardar, datoAEditar, cancelarEdicion, sesiones=[] }
           <span className="fase-title">PARTE INICIAL (Calentamiento)</span>
           <div className="form-item-inline">
             <label className="form-label-inline">Tiempo:</label>
-            <input type="number" placeholder="Mins" className="input-tiempo" value={formData.tiempoInicio} required
+            <input type="number" placeholder="Mins" className="input-tiempo" min="0" value={formData.tiempoInicio} required
               onChange={(e) => setFormData({...formData, tiempoInicio: e.target.value})}/>
             <span className="mins-tag">min</span>
           </div>
@@ -166,11 +166,8 @@ function FormularioSesion({ guardar, datoAEditar, cancelarEdicion, sesiones=[] }
           <span className="fase-title">BLOQUE CENTRAL (Principal)</span>
           <div className="form-item-inline">
             <label className="form-label-inline">Tiempo:</label>
-            <input 
-              type="number" placeholder="Mins" className="input-tiempo"
-              value={formData.tiempoBloqueCentral} required
-              onChange={(e) => setFormData({...formData, tiempoBloqueCentral: e.target.value})}
-            />
+            <input type="number" placeholder="Mins" className="input-tiempo" min="0" value={formData.tiempoBloqueCentral} required
+              onChange={(e) => setFormData({...formData, tiempoBloqueCentral: e.target.value})}/>
             <span className="mins-tag">min</span>
           </div>
         </div>
@@ -186,11 +183,8 @@ function FormularioSesion({ guardar, datoAEditar, cancelarEdicion, sesiones=[] }
           <span className="fase-title">PARTE FINAL (Cierre)</span>
           <div className="form-item-inline">
             <label className="form-label-inline">Tiempo:</label>
-            <input 
-              type="number" placeholder="Mins" className="input-tiempo"
-              value={formData.tiempoCierre} required
-              onChange={(e) => setFormData({...formData, tiempoCierre: e.target.value})}
-            />
+            <input type="number" placeholder="Mins" className="input-tiempo" min="0" value={formData.tiempoCierre} required
+              onChange={(e) => setFormData({...formData, tiempoCierre: e.target.value})}/>
             <span className="mins-tag">min</span>
           </div>
         </div>
