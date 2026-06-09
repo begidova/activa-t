@@ -24,7 +24,7 @@ exports.obtenerCursosGrupos = async (req, res) => {
 
 exports.obtenerAlumnoById = async (req, res) => {
     try {
-        const alumno = await Usuario.findById(req.params.id);
+        const alumno = await Usuario.findById(req.params.id).select('-password');
         if (!alumno) return res.status(404).json({ mensaje: "Usuario no encontrado" });
         res.status(200).json(alumno);
     } catch (error) {
@@ -56,7 +56,7 @@ exports.obtenerAlumnosByCursoAndByGrupo = async (req, res, next) => {
         filtro.rol = 'ALUMNO';
         if (curso) filtro.curso = curso;
         if (grupo) filtro.grupo = grupo;
-        const usuarios = await Usuario.find(filtro);
+        const usuarios = await Usuario.find(filtro).select('-password');
         res.json(usuarios);
     } catch (error) {
         next(error);

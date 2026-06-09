@@ -6,10 +6,10 @@ const fs = require('fs');
 
 exports.crearProfesor = async (req, res) => {
     try {
-        const { nombre, email, password, rol, curso, grupo, codigoSecreto } = req.body;
+        const { nombre, email, password, rol, curso, grupo, codigo } = req.body;
         const existe = await Usuario.countDocuments({ email: new RegExp(email.toLowerCase())});
         if (existe <= 0 ) {
-            if (codigoSecreto === 'Profe2026EF') {
+            if (codigo === 'Profe2026EF') {
                 const salt = await bcrypt.genSalt(10);
                 const passwordHasheada = await bcrypt.hash(password, salt);
                 const nuevoUsuario = new Usuario({
@@ -99,15 +99,13 @@ exports.registrarAlumnos = async (req, res) => {
 
 exports.cambiarPassword = async (req, res) => {
     try {
-        const { passwordActual, passwordNueva } = req.body;
+        const { pwdActual, pwdNueva } = req.body;
         const usuario = await Usuario.findById(req.usuario.id);
         if (!usuario) return res.status(404).json({ mensaje: "Usuario no encontrado" });
-        const esValida = await bcrypt.compare(passwordActual, usuario.password);
-        if (!esValida) {
-            return res.status(400).json({ mensaje: "La contraseña actual no es correcta" });
-        }
+        const esValida = await bcrypt.compare(pwdActual, usuario.password);
+        if (!esValida) return res.status(400).json({ mensaje: "La contraseña actual no es correcta" });
         const salt = await bcrypt.genSalt(10);
-        usuario.password = await bcrypt.hash(passwordNueva, salt);
+        usuario.password = await bcrypt.hash(pwdNueva, salt);
         await usuario.save();
         res.json({ mensaje: "Contraseña actualizada correctamente" });
     } catch (error) {

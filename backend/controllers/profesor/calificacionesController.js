@@ -59,7 +59,6 @@ exports.obtenerPeoresAlumnos = async (req, res) => {
                     _id: 1,
                     promedio: 1,
                     nombre: "$datosAlumno.nombre",
-                    apellido: "$datosAlumno.apellido",
                     curso: "$datosAlumno.curso",
                     grupo: "$datosAlumno.grupo"
                 } 
@@ -139,8 +138,7 @@ exports.obtenerEstadisticasAlumno = async (req, res) => {
             .populate({
                 path: 'actividad',
                 match: {tipo: 'PRUEBA FISICA'}
-            })
-            .sort({fechaRegistro: -1});
+            });
         const pruebasFisicas = calificaciones.filter(c => c.actividad !== null);
         res.status(200).json(pruebasFisicas);
     } catch (error) {

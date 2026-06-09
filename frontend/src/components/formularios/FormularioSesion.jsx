@@ -47,10 +47,10 @@ function FormularioSesion({ guardar, datoAEditar, cancelarEdicion, sesiones=[] }
 
   useEffect(() => {
     if (!datoAEditar && formData.curso) {
-      const sesionesDeEsteCurso = sesiones.filter(s => {
+      const sesionesCurso = sesiones.filter(s => {
         return String(s.curso) === String(formData.curso);
       });
-      const numerosOcupados = sesionesDeEsteCurso
+      const numerosOcupados = sesionesCurso
         .map(s => Number(s.numeroSesion))
         .filter(num => !isNaN(num)) 
         .sort((a, b) => a - b);
@@ -64,8 +64,8 @@ function FormularioSesion({ guardar, datoAEditar, cancelarEdicion, sesiones=[] }
 
   useEffect(() => {
     if (datoAEditar) {
-      const saDeLaSesion = situaciones.find(sa => sa._id === (datoAEditar.situacionAprendizaje?._id || datoAEditar.situacionAprendizaje));
-      const cursoReal = saDeLaSesion ? String(saDeLaSesion.curso) : String(datoAEditar.curso || '1');
+      const saSesion = situaciones.find(sa => sa._id === (datoAEditar.situacionAprendizaje?._id || datoAEditar.situacionAprendizaje));
+      const cursoReal = saSesion ? String(saSesion.curso) : String(datoAEditar.curso || '1');
       setFormData({
         titulo: datoAEditar.titulo || '',
         numeroSesion: datoAEditar.numeroSesion || 1,

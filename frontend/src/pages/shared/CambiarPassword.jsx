@@ -11,17 +11,10 @@ function CambiarPassword() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (form.nueva !== form.confirmar) {
-            return setMensaje({ tipo: 'error', texto: 'Las nuevas contraseñas no coinciden' });
-        }
-        if (form.nueva.length < 6) {
-            return setMensaje({ tipo: 'error', texto: 'La contraseña debe tener al menos 6 caracteres' });
-        }
+        if (form.nueva !== form.confirmar) return setMensaje({ tipo: 'error', texto: 'Las nuevas contraseñas no coinciden' });
+        if (form.nueva.length < 6) return setMensaje({ tipo: 'error', texto: 'La contraseña debe tener al menos 6 caracteres' });
         try {
-            await actualizarPassword({ 
-                passwordActual: form.actual, 
-                passwordNueva: form.nueva 
-            });
+            await actualizarPassword({ pwdActual: form.actual, pwdNueva: form.nueva });
             setMensaje({ tipo: 'exito', texto: 'Contraseña cambiada con éxito' });
             setForm({ actual: '', nueva: '', confirmar: '' });
         } catch (err) {

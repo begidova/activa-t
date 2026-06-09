@@ -57,7 +57,7 @@ function PantallaSesion() {
     return (
         <div className="container animate-fade-in">
             <header className="detalle-header">
-                <button onClick={() => navigate(esProfesor ? "/gestion/sesiones" : "/alumno/sesiones")} className="btn-back">
+                <button onClick={() => navigate((esProfesor ? "/gestion" : "/alumno") + "/sesiones")} className="btn-back">
                     <ChevronLeft size={16} /> Volver
                 </button>
                 <div className="detalle-titulo-container">

@@ -2,9 +2,7 @@ import { Trash2, Users, Clock, Hash, Layout, Pencil } from 'lucide-react';
 import '../../styles/TarjetaSesion.css';
 
 function TarjetaSesion({ dato, onEliminar, onEditar }) {
-  const tiempoTotal = (dato.inicio?.tiempo || 0) + 
-                      (dato.bloqueCentral?.tiempo || 0) + 
-                      (dato.cierre?.tiempo || 0);
+  const tiempoTotal = (dato.inicio?.tiempo || 0) + (dato.bloqueCentral?.tiempo || 0) + (dato.cierre?.tiempo || 0);
   const totalActividades = dato.bloqueCentral?.actividades?.length || 0;
 
   return (

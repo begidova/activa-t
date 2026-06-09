@@ -12,8 +12,8 @@ const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'alumnos_fotos', 
-    allowed_formats: ['jpg', 'png', 'jpeg'],
-  },
+    allowed_formats: ['jpg', 'png', 'jpeg']
+  }
 });
 
 const uploadCloud = multer({ storage });

@@ -11,7 +11,7 @@ exports.obtenerDatosFisicos = async (req, res) => {
 
 exports.obtenerPerfilAlumno = async (req, res) => {
     try {
-        const alumno = await Usuario.findById(req.usuario.id);
+        const alumno = await Usuario.findById(req.usuario.id).select('-password');
         res.json(alumno);
     } catch (error) {
         res.status(500).json({ mensaje: "Error al cargar el alumno" });

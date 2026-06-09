@@ -99,7 +99,6 @@ function PantallaGestion({ titulo, endpoint, Formulario, Tarjeta, campoBusqueda 
             const coincideTrimestre = filtroTrimestre === '' || String(el.trimestre) === filtroTrimestre;
             return coincideBusqueda && coincideTipo && coincideTrimestre;
         }
-
     }).slice(0, 15);
 
     return (

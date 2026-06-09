@@ -13,7 +13,7 @@ function Registro() {
         rol: 'PROFESOR', 
         curso: 0,
         grupo: '',
-        codigoSecreto: ''
+        codigo: ''
     });
     
     const navigate = useNavigate();
@@ -21,6 +21,7 @@ function Registro() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            if (datos.password.length < 6) return setError('La contraseña debe tener al menos 6 caracteres');
             await registrarProfesor(datos);
             navigate(`/login`);
         } catch (err) {
@@ -36,7 +37,7 @@ function Registro() {
                 <input type="text" placeholder="Nombre completo" required onChange={(e) => setDatos({...datos, nombre: e.target.value})}/>
                 <input type="email" placeholder="Correo electrónico" required onChange={(e) => setDatos({...datos, email: e.target.value})}/>
                 <input type="password" placeholder="Contraseña" required onChange={(e) => setDatos({...datos, password: e.target.value})}/>
-                <input type="text" placeholder="Código de centro" required onChange={(e) => setDatos({...datos, codigoSecreto: e.target.value})}/>
+                <input type="text" placeholder="Código de centro" required onChange={(e) => setDatos({...datos, codigo: e.target.value})}/>
                 <button type="submit" className="btn-login">REGISTRARME</button>
                 <p onClick={() => navigate(`/login`)} className="auth-link">
                     ¿Ya tienes cuenta? Inicia sesión

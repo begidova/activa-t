@@ -35,7 +35,6 @@ function ModalAvatar({ abierto, setMostrarModal, alumno, setAlumno, estadisticas
             const notasActitud = calificaciones.filter(n => n.actividad?.tipo === 'ACTITUD');
             const promedioActitud = notasActitud.length > 0 ? 
                 notasActitud.reduce((acc, curr) => acc + curr.puntuacion, 0) / notasActitud.length : 0;
-
             const stats = estadisticas[estadisticas.length - 1];
             const movilidad = (stats.Agilidad + stats.Flexibilidad) * 5;
             const potencia = (stats.Velocidad + stats.Salto) * 5;

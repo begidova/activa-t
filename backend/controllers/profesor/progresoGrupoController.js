@@ -4,7 +4,7 @@ const Sesion = require('../../models/Sesion');
 exports.finalizarSesion = async (req, res) => {
     const { curso, grupo, numeroSesion, situacionAprendizajeId } = req.body;
     try {
-        const progresoActual = await ProgresoGrupo.findOne({ curso, grupo, situacionAprendizaje: situacionAprendizajeId });
+        const progresoActual = await ProgresoGrupo.findOne({ curso, grupo });
         const ultimaCompletada = progresoActual ? progresoActual.ultimaSesion : 0;
         if (numeroSesion <= ultimaCompletada) {
             return res.status(400).json({ 
@@ -13,18 +13,16 @@ exports.finalizarSesion = async (req, res) => {
         }
         const siguienteSesion = await Sesion.findOne({
             curso: curso,
-            situacionAprendizaje: situacionAprendizajeId,
             numeroSesion: { $gt: ultimaCompletada } 
         }).sort({ numeroSesion: 1 });
-        if (!siguienteSesion) return res.status(400).json({ mensaje: "No hay más sesiones disponibles para este tema." });
         if (numeroSesion !== siguienteSesion.numeroSesion) {
             return res.status(400).json({ 
                 mensaje: `No puedes saltarte sesiones. La siguiente sesión para este grupo es la ${siguienteSesion.numeroSesion}.` 
             });
         }
         await ProgresoGrupo.findOneAndUpdate(
-            { curso, grupo, situacionAprendizaje: situacionAprendizajeId },
-            { $set: { ultimaSesion: numeroSesion }},
+            { curso, grupo },
+            { $set: { ultimaSesion: numeroSesion, situacionAprendizaje: situacionAprendizajeId }},
             { upsert: true, new: true }
         );
         res.json({ mensaje: "Progreso guardado correctamente" });

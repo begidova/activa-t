@@ -2,9 +2,7 @@ import { Clock, BookOpen, ChevronRight, PlayCircle, Lock } from 'lucide-react';
 import '../../styles/TarjetaSesionAlumno.css';
 
 function TarjetaSesionAlumno({ sesion, esSiguiente, bloqueada, alHacerClic }) {
-    const tiempoTotal = (sesion.inicio?.tiempo || 0) + 
-                        (sesion.bloqueCentral?.tiempo || 0) + 
-                        (sesion.cierre?.tiempo || 0);
+    const tiempoTotal = (sesion.inicio?.tiempo || 0) + (sesion.bloqueCentral?.tiempo || 0) + (sesion.cierre?.tiempo || 0);
 
     return (
         <div className={`tarjeta-sesion-alumno ${esSiguiente ? 'destacada' : ''}${bloqueada ? 'sesion-bloqueada' : ''}`}

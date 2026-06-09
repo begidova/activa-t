@@ -58,15 +58,17 @@
 .icon-edit, .icon-delete {
   cursor: pointer;
   color: #cbd5e0; 
-  transition: color 0.2s;
+  transition: all 0.2s ease;
 }
 
 .icon-edit:hover {
-  color: #4a5568;
+  color: #3498db; 
+  transform: scale(1.2);
 }
 
 .icon-delete:hover {
   color: #e53e3e;
+  transform: scale(1.2);
 }
 
 .contenedor-actividades {
